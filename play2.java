@@ -12,14 +12,14 @@ for(int i=0;i<str.length();i++)
 {
 if(Character.isDigit(str.charAt(i))
   {
-    for(int j=0;j<str.charAt(i);j++)
+    for(int j=0;j<Integer.parseInt(String.valueOf(str.charAt(i)));j++)
       {
             System.out.println(sd);
       }
       sd="";
   }
   else
-    sd += str.charAt(i);
+    sd += String.valueOf(str.charAt(i));
 }
 }
 }
